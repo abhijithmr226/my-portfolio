@@ -1,0 +1,19 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup & scratch images
+Images/*.backup.png
+Images/*.cropped.png
+Images/*.opt.png
+
+# Scratch directories
+scratch/
+.system_generated/

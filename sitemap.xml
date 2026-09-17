@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Main Portfolio Homepage -->
+  <url>
+    <loc>https://abhijithmr.online/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Hero Portrait -->
+    <image:image>
+      <image:loc>https://abhijithmr.online/Images/Header-Image.webp</image:loc>
+      <image:title>ABHIJITH MR — Freelance Front-End Developer &amp; UI/UX Designer</image:title>
+      <image:caption>ABHIJITH MR Portfolio - Front-End Developer, Cyber Security, UI/UX Designer</image:caption>
+    </image:image>
+
+    <!-- About Me Photo -->
+    <image:image>
+      <image:loc>https://abhijithmr.online/Images/About-Us.webp</image:loc>
+      <image:title>ABHIJITH MR — Front-End Architect &amp; Cyber Security Specialist</image:title>
+      <image:caption>ABHIJITH MR professional profile and verified credentials</image:caption>
+    </image:image>
+
+    <!-- Project 01: Omeagle -->
+    <image:image>
+      <image:loc>https://abhijithmr.online/Images/project-omeagle.webp</image:loc>
+      <image:title>Omeagle — Real-Time WebRTC Video &amp; Text Chat by ABHIJITH MR</image:title>
+      <image:caption>WebRTC mesh peer-to-peer real-time video communication platform</image:caption>
+    </image:image>
+
+    <!-- Project 02: Krynn Tools -->
+    <image:image>
+      <image:loc>https://abhijithmr.online/Images/project-krynntools.webp</image:loc>
+      <image:title>Krynn Tools — Developer Productivity Platform by ABHIJITH MR</image:title>
+      <image:caption>Developer utility ecosystem with client-side AI tools</image:caption>
+    </image:image>
+
+    <!-- Project 03: HotelsNearMe -->
+    <image:image>
+      <image:loc>https://abhijithmr.online/Images/project-hotelsnearme.webp</image:loc>
+      <image:title>HotelsNearMe — Hotel Discovery &amp; Booking Web App by ABHIJITH MR</image:title>
+      <image:caption>Responsive hotel booking portal with geolocation search</image:caption>
+    </image:image>
+
+    <!-- Project 04: Hawksbill Security -->
+    <image:image>
+      <image:loc>https://abhijithmr.online/Images/project-hawksbill.webp</image:loc>
+      <image:title>Hawksbill Security — Corporate Cybersecurity Portal by ABHIJITH MR</image:title>
+      <image:caption>Enterprise cybersecurity services and audit interface</image:caption>
+    </image:image>
+
+    <!-- Project 05: The Qoder -->
+    <image:image>
+      <image:loc>https://abhijithmr.online/Images/project-theqoder.webp</image:loc>
+      <image:title>The Qoder — Technical Developer Resource Hub by ABHIJITH MR</image:title>
+      <image:caption>Programming knowledge base and algorithmic study repository</image:caption>
+    </image:image>
+
+    <!-- Project 06: SecureScan -->
+    <image:image>
+      <image:loc>https://abhijithmr.online/Images/project-securescan.webp</image:loc>
+      <image:title>SecureScan — Web Vulnerability Audit Dashboard by ABHIJITH MR</image:title>
+      <image:caption>Automated security scanning interface and risk analysis platform</image:caption>
+    </image:image>
+
+    <!-- Project 07: Creative Studio -->
+    <image:image>
+      <image:loc>https://abhijithmr.online/Images/project-creativestudio.webp</image:loc>
+      <image:title>Creative Studio — Interactive Digital Agency Portfolio by ABHIJITH MR</image:title>
+      <image:caption>Awwwards-style creative showcase with kinetic typography and 3D card tilt</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Developer Resume PDF -->
+  <url>
+    <loc>https://abhijithmr.online/Ux_Resume_Abhijith.pdf</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
