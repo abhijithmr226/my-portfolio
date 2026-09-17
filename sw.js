@@ -5,7 +5,7 @@
    and stale-while-revalidate caching.
 ========================================================= */
 
-const CACHE_NAME = 'abhijith-portfolio-v1';
+const CACHE_NAME = 'abhijith-portfolio-v1.1';
 
 const STATIC_ASSETS = [
   './',
@@ -63,8 +63,13 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(event.request.url);
 
+  // Bypass Vercel system / analytics / Speed Insights telemetry
+  if (url.pathname.startsWith('/_vercel')) {
+    return;
+  }
+
   // Skip cross-origin requests except fonts or CDNs
-  if (url.origin !== self.location.origin && !url.origin.includes('fonts.googleapis.com') && !url.origin.includes('fonts.gstatic.com') && !url.origin.includes('cdnjs.cloudflare.com')) {
+  if (url.origin !== self.location.origin && !url.origin.includes('fonts.googleapis.com') && !url.origin.includes('fonts.gstatic.com') && !url.origin.includes('cdnjs.cloudflare.com') && !url.origin.includes('unpkg.com')) {
     return;
   }
 
