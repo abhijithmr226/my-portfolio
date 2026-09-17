@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Node Not Found | ABHIJITH MR</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Space+Grotesk:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --bg-dark: #090a0f;
+      --card-bg: #11131a;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --accent-blue: #0071ff;
+      --accent-cyan: #38bdf8;
+      --text-white: #ffffff;
+      --text-muted: #8e95a5;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-x: hidden;
+      position: relative;
+    }
+    .ambient-glow {
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      filter: blur(140px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.25;
+    }
+    .ambient-1 {
+      top: -100px;
+      left: -100px;
+      background: #0071ff;
+    }
+    .ambient-2 {
+      bottom: -100px;
+      right: -100px;
+      background: #38bdf8;
+    }
+    header {
+      padding: 24px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .brand-logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+      color: var(--text-white);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .blue-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background: var(--accent-blue);
+      border-radius: 2px;
+    }
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      border-radius: 99px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent-cyan);
+    }
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      background: #ef4444;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #ef4444;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      position: relative;
+      z-index: 10;
+    }
+    .error-card {
+      max-width: 580px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 48px 40px;
+      text-align: center;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    }
+    .mono {
+      font-family: 'Space Mono', monospace;
+    }
+    .error-tag {
+      font-size: 0.8rem;
+      color: var(--accent-cyan);
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .error-code {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      font-size: clamp(4.5rem, 12vw, 7.5rem);
+      line-height: 0.9;
+      letter-spacing: -0.05em;
+      background: linear-gradient(135deg, #ffffff 40%, #0071ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+    .error-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .error-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .btn-return {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      background: var(--accent-blue);
+      color: #ffffff;
+      text-decoration: none;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 99px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      box-shadow: 0 8px 24px rgba(0, 113, 255, 0.35);
+    }
+    .btn-return:hover {
+      transform: translateY(-2px);
+      background: #005ce6;
+      box-shadow: 0 12px 30px rgba(0, 113, 255, 0.5);
+    }
+    footer {
+      padding: 20px 32px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      position: relative;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-glow ambient-1"></div>
+  <div class="ambient-glow ambient-2"></div>
+
+  <header>
+    <a href="/" class="brand-logo">
+      ABHIJITH MR <span class="blue-dot"></span>
+    </a>
+    <div class="status-pill">
+      <span class="status-dot"></span>
+      <span>404: ROUTE_NOT_FOUND</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="error-card">
+      <span class="error-tag mono">// NODE UNREACHABLE</span>
+      <div class="error-code">404</div>
+      <h1 class="error-title">Page / Route Not Found</h1>
+      <p class="error-desc">
+        The requested URL was not found on the server, moved, or purged. Let's redirect you back to the main core interface.
+      </p>
+      <a href="/" class="btn-return">
+        <span>RETURN TO HOME</span>
+        <span>↗</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <span class="mono">© 2026 ABHIJITH MR — Engineered for Performance &amp; Security</span>
+  </footer>
+
+</body>
+</html>
